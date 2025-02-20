@@ -23,11 +23,13 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    align-items: center;
+    padding: 20px 40px;
     position: absolute;
     top: 0;
 }
 
+/* Secções (Home, Discografia, Sobre, Vídeos) à esquerda */
 nav {
     display: flex;
     gap: 20px;
@@ -53,16 +55,24 @@ h1 {
     margin-top: 20vh;
 }
 
-/* Redes sociais */
+/* Redes sociais no canto superior direito */
 .social-links {
     display: flex;
-    gap: 15px;
+    gap: 10px;
+    position: absolute;
+    top: 20px;
+    right: 40px;
 }
 
 .social-links img {
-    width: 30px;
-    height: 30px;
+    width: 24px;  /* Ícones menores */
+    height: 24px;
     cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
 }
 
 /* Botão de ouvir */
