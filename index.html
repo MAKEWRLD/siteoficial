@@ -4,39 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MAKE WRLD</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+    <div class="background"></div>
     <header>
         <nav>
             <ul class="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#discografia">Discografia</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#videos">Vídeos</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Discografia</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Vídeos</a></li>
             </ul>
-            <h1 class="logo">MAKE WRLD</h1>
-            <ul class="social">
-                <li><a href="https://youtube.com/@makewrld?si=7oPXwvIx7u0ghiZx" target="_blank"><img src="assets/youtube.png" alt="YouTube"></a></li>
-                <li><a href="https://www.instagram.com/makewrld_" target="_blank"><img src="assets/instagram.png" alt="Instagram"></a></li>
-                <li><a href="https://open.spotify.com/intl-pt/artist/4mMdo6sMaVvO54ZlifNKst" target="_blank"><img src="assets/spotify.png" alt="Spotify"></a></li>
-                <li><a href="https://music.apple.com/ao/artist/make-wrld/1700001990" target="_blank"><img src="assets/applemusic.png" alt="Apple Music"></a></li>
-                <li><a href="https://on.soundcloud.com/2NZY1wxuXM8yyLLz9" target="_blank"><img src="assets/soundcloud.png" alt="SoundCloud"></a></li>
+            <ul class="socials">
+                <li><a href="https://www.instagram.com/makewrld_">Instagram</a></li>
+                <li><a href="https://youtube.com/@makewrld">YouTube</a></li>
+                <li><a href="https://open.spotify.com/artist/4mMdo6sMaVvO54ZlifNKst">Spotify</a></li>
+                <li><a href="https://music.apple.com/ao/artist/make-wrld/1700001990">Apple Music</a></li>
+                <li><a href="https://on.soundcloud.com/2NZY1wxuXM8yyLLz9">SoundCloud</a></li>
             </ul>
         </nav>
     </header>
-
-    <section class="hero">
-        <div class="background"></div>
-        <div class="content">
-            <button class="play-button" onclick="playMusic()">▶ Ouvir Agora</button>
+    <main>
+        <h1>MAKE WRLD</h1>
+        <div class="play-button">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/4mMdo6sMaVvO54ZlifNKst" width="300" height="80" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
         </div>
-    </section>
-
-    <script>
-        function playMusic() {
-            window.open("https://open.spotify.com/intl-pt/artist/4mMdo6sMaVvO54ZlifNKst", "_blank");
-        }
-    </script>
+    </main>
 </body>
 </html>
